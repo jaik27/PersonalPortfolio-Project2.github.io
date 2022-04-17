@@ -1,0 +1,212 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font: lighter 19px/1.4 Source Sans Pro, sans-serif;
+    color:rgb(124, 67, 67);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+p {
+    font-weight: 100;
+    font-size: 16px;
+    padding: 0 2em 0;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+    color: #a8459d;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 27px;
+    color: #913986;
+}
+h2 {
+    font-weight: 600;
+    font-size: 25px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+#intro {
+    color: #2e122b;
+    padding: 0;
+}
+footer {
+    color: #55224f;
+}
+
+main {
+    padding-bottom: 2em;
+    margin: 1em;
+    flex: 1;  
+}
+img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+.id {
+    max-width: 200px;
+}
+header {
+    background: lightgray;
+    margin: 0;
+    width: 100%;
+}
+.button {
+    background-color: rgb(255, 255, 255);
+    padding: 6px;
+    margin: 1vw 3vw;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+#first {
+    margin: 40px;
+}
+footer {
+    padding: 20px 0;
+    background-color: lightgray;
+}
+.contact-me-now {
+    font-weight: 500;
+}
+footer a {
+    color: #913686;
+    font-weight: 500;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+.below-footer {
+    border-top: thin solid #4A1C459E;
+    padding: 0.5em 0;
+    margin: 0 1em;
+}
+.name-footer {
+    float: left;
+}
+.back-footer {
+    float: right;
+}
+#home-footer, #portfolio-footer, #skills-footer, #contact-footer {
+    display: none;
+}
+h2 {
+    padding: 1em 0;
+}
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .responsive {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        align-items: flex-start;
+    }
+    #intro {
+        font-size: 22px;    
+        text-align: left;
+    }
+    .id {
+        order: 1;
+        min-width: 300px;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    h1 {
+        margin-top: 1.5em;
+    }
+
+    .button {
+        background: none;
+        font-size: 16px;
+        padding:0;
+    }
+    .articles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2vw;
+    }
+    .portfolio {
+        max-width: 50%;
+        flex-wrap: wrap;
+        padding-bottom: 1em;
+    }
+    img {
+        padding: 1vw;
+    }
+    .interested, .contact-me-now{
+        font-size: 22px;
+        margin-bottom: 2em;
+    }
+    #home-footer, #portfolio-footer, #contact-footer, #skills-footer {
+        display: inline;
+    }
+    .below-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .below-footer a{
+        font-weight: 700;
+        padding: 0 1em;
+    }
+    .name-footer {
+        flex: 1;
+        text-align: left;
+        padding: 0;
+    }
+    .back-footer {
+        display: none;
+    }
+    .interested {
+        padding: 0 5em;
+        margin-bottom: 0;
+    }
+    #email {
+        padding: 0;
+        margin-bottom: 3em;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        padding: 0;
+        display: block;
+    }
+    .button {
+        margin: 0 0 0 0.5em;
+    }
+    .top-header { 
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }   
+    .dp {
+        min-width: 34%;
+    }
+    .portfolio {
+        width: 33%;
+        margin: 0 auto;    
+    }
+}
